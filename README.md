@@ -1,0 +1,1 @@
+This is a simple Reaction Speed Test game developed with HTML, CSS and JavaScript.
