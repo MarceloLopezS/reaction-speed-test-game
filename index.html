@@ -9,18 +9,29 @@
     <title>Reaction - Speed Test</title>
 </head>
 <body>
-    <header>
-        <section class="navbar">
-            <h1>Test Your <span>Speed</span></h1>
-            <button data-game-start></button>
-            <button data-game-stop></button>
+    <header class="container">
+        <h1>Test Your <span class="text-highlight">Speed</span></h1>
+        <section class="game-controls">
+            <button class="bg-secondary-400" data-game-start>Start</button>
+            <button class="text-highlight bg-neutral-900" data-game-stop>Stop</button>
         </section>
     </header>
-    <main>
-        <div></div>
+    <main class="container">
+        <section class="game-instructions">
+            Click on the boxes and circles as <span class="text-highlight">fast</span> as you can.
+        </section>
+        <section class="indicators">
+            <div class="indicators__last-reaction-time">
+                Last reaction time: <span data-last-reaction-time></span>
+            </div>
+        </section>
+        <section class="main-board">
+            <div data-countdown-message>3</div>
+            <div data-game-target></div>
+        </section>
     </main>
-    <footer>
-        <div class="contact-info">
+    <footer class="container">
+        <section class="contact-info">
             <span>Developed by: </span>
             <a class="contact-info__link" href="https://github.com/MarceloLopezS" target="_blank" rel="noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -41,7 +52,7 @@
                 </svg>
                 About this project
             </a>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
