@@ -1,10 +1,10 @@
 :root {
-    --clr-neutral-900: hsl(0,0%,0%);
+    --clr-neutral-900: hsl(0, 0%, 0%);
 
-    --clr-primary-400: hsl(146,50%,35%);
+    --clr-primary-400: hsl(146, 50%, 35%);
 
-    --clr-secondary-300: hsl(60,100%,60%);
-    --clr-secondary-400: hsl(60,100%,45%);
+    --clr-secondary-300: hsl(60, 100%, 60%);
+    --clr-secondary-400: hsl(60, 100%, 45%);
 
     --ff-primary: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
@@ -33,6 +33,7 @@
     --fs-control-button: clamp(var(--fs-150), 1.5vw, var(--fs-175));
     --fs-body: clamp(var(--fs-85), 1.1vw, var(--fs-135));
     --fs-countdown: clamp(var(--fs-500), 6.75vw, var(--fs-700));
+    --fs-gameover-message: clamp(var(--fs-200), 2.5vw, var(--fs-300));
     --fs-footer: clamp(var(--fs-75), 1.1vw, var(--fs-110));
 
     --size-25: 0.25rem;
@@ -178,23 +179,44 @@ main {
     padding-block: 0.75em;
 }
 
+.indicators__last-reaction-time span[data-last-reaction-time] {
+    color: var(--clr-primary-400);
+}
+
 .main-board {
     position: relative;
     display: grid;
     place-items: center;
     flex-grow: 1;
+    cursor: crosshair;
+}
+
+.main-board > * {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
 }
 
 .main-board div[data-countdown-message] {
     visibility: hidden;
     font-size: var(--fs-countdown);
     font-weight: var(--fw-regular);
+    transform: translateY(-30%);
+}
+
+.main-board div[data-gameover-message] {
+    visibility: hidden;
+    font-size: var(--fs-gameover-message);
+    transform: translateY(-100%);
+}
+
+.main-board span[data-average-reaction-time] {
+    color: var(--clr-primary-400);
 }
 
 .main-board div[data-game-target] {
+    visibility: hidden;
     position: absolute;
-    top: 0;
-    left: 0;
+    aspect-ratio: 1;
 }
 
 footer {

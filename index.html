@@ -6,11 +6,11 @@
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="./main.js" defer></script>
-    <title>Reaction - Speed Test</title>
+    <title>Reaction - Aim Speed Test</title>
 </head>
 <body>
     <header class="container">
-        <h1>Test Your <span class="text-highlight">Speed</span></h1>
+        <h1>Test Your <span class="text-highlight">Aim Speed</span></h1>
         <section class="game-controls">
             <button class="bg-secondary-400" data-game-start>Start</button>
             <button class="text-highlight bg-neutral-900" data-game-stop>Stop</button>
@@ -26,7 +26,10 @@
             </div>
         </section>
         <section class="main-board">
-            <div data-countdown-message>3</div>
+            <div data-countdown-message></div>
+            <div data-gameover-message>
+                Your average reaction time was: <span data-average-reaction-time></span>
+            </div>
             <div data-game-target></div>
         </section>
     </main>
