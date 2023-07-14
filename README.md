@@ -4,15 +4,15 @@ This is a simple Aim Speed Test game developed with HTML, CSS and JavaScript. It
 
 The app is intended to provide a simple, user-friendly interface and optimal experience across desktop devices with different screen resolutions that use a mouse as the primary pointer device. For this, the most recent CSS features, along with semantic HTML, and up-to-date JavaScript technologies are used.
 
-The main game logic is handled by the JavaScript code, which is driven towards Functional Programming and it's centered in clean, readable code with good practices. This code is divided in four main sections for legibility: DOM Elements, Global Variables, Main and Functions.
+The main game logic is handled by the JavaScript code, which is driven towards Functional Programming and centered in clean, readable code with good practices. This code is divided in four main sections: *DOM Elements*, *Variables*, *Main* and *Functions*.
 
-The DOM Elements section stores the elements that will be manipulated to achieve the game's visual functionallity and interactivity.
+The *DOM Elements* section stores the elements that will be manipulated to achieve the game's visual functionallity and interactivity.
 
-The Global Variables section initializes the variables in the highest scope so they can easily be accessed and modified inside different functions.
+The *Variables* section initializes the variables in the highest scope so they can easily be accessed and modified inside different functions.
 
-The Main section sets the event listeners for the main controls, which are the Start and Stop button.
+The *Main* section sets the event listeners for the main controls, which are the Start and Stop button.
 
-The Functions section contains all the necessary functions for the game to work. These are:
+The *Functions* section contains all the necessary functions for the game to work. These are:
 
 - `showElements(...elements)`: This function takes in an arbitrary number of DOM elements as arguments and sets their CSS visibility property to ‘visible’, effectively showing them on the page.
 
