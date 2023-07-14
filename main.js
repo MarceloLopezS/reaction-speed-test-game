@@ -1,3 +1,5 @@
+(function() {
+
 /* DOM Elements */
 
 
@@ -13,7 +15,7 @@ const dom_averageReactionTime = dom_gameOverMessage.querySelector("span[data-ave
 const dom_targetFigure = dom_mainBoard.querySelector("div[data-game-target]");
 
 
-/* GLOBAL VARIABLES */
+/* VARIABLES */
 
 
 let countDownInterval, figureDisplayTimeout, figureStartMoment, figureAppearances, averageReactionTime;
@@ -205,3 +207,5 @@ function handleOnStartClick() {
         }
     }, 1000)
 }
+
+}())
